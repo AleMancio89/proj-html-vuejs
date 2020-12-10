@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* Utility & general */
+
+.debug{
+    border: 1px solid black;
+}
+
+.d-flex{
+    display:flex;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+
+.btn{
+    outline: none;
+    border: none;
+    background-color: #f72b0c;
+    color: white;
+    border-radius: 5px;
+    height: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
+}
+
+/* Header */
+
+.navbar{
+    /* height: 100px; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    margin: 40px 0;
+}
+
+.menu ul{
+    border-right: 1px solid grey;
+    margin-right: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #868686;
+    padding-bottom: 10px;
+    font-size: 0.7em;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.menu li a.active{
+    color: #f72b0c;
+    border-bottom: 2px solid;
+}
+
+.menu span i{
+    color: #868686;
+    font-size: 0.8em;
+}
+
+/* Main */
+
+#conferenceRegister{
+    background-image: url('../img/slider-1-bg.jpg');
+    background-position: center;
+    text-align: center;
+    color: white; 
+    justify-content: center;
+    align-items: center; 
+    padding: 148px 0;
+}
+
+.infoConference h3{
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.infoConference h1{
+    font-size: 5em;
+    margin: 20px 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+}
+
+.whenWhereWho{
+    width: 500px;
+    margin:auto;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    border-top: 3px solid white;
+}
+
+#aboutUs > div{
+    flex-basis: calc(100% / 3);
+    padding: 50px 0px;
+}
+
+.icon i{
+    color: #c6c1bd;
+    font-size: 1.9em;
+    margin: 0px 20px;
+}
+
+.text h4{
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.text  p{
+    color: #868686;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.text a{
+    text-decoration: none;
+    font-style: italic;
+    color: #f72b0c;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+#counterSubscribe{
+    background-image: url('../img/countdown-bg1.jpg');
+    padding-top: 120px;
+    padding-bottom: 100px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    border-radius: 5px;
+    margin-right: 20px;
+    color: white;
+    background-color: rgb(0,0,0, 0.8);
+}
+
+.countdown > div h1{
+    font-size: 3.5em;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.countdown > div p{
+    font-size: 0.9em;
+}
+
+.hours{
+    opacity: 0.9;
+}
+
+.mins{
+    opacity: 0.8;
+}
+
+.secs{
+    opacity: 0.7;
+}
+
+#inputEmail{
+    width: 360px;
+    margin-right: 10px;
+    border: none;
+    height: 55px;
+    outline: none;
+    padding: 20px 10px;
+    color: #c6c1bd;
+}
+
+#inputEmail::placeholder{
+    color: #c6c1bd;
+}
+
+#subBtn{
+    border-radius: 0px;
+    border-bottom: 2px solid #bf351f;
+}
+
+#counterSubscribe > h3{
+    letter-spacing: 5px;
+    margin: 30px 0;
+}
+
+#speakers .title{
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.title > h1{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.arrows{
+    align-items: center;
+}
+
+.arrows button{
+    padding: 0px;
+    height: 36px;
+    width: 36px;
+    margin-right: 5px;
+}
+
+#speakers img{
+    width: 255px;
+    height: 183px;
+    border-radius: 5px;
+}
+
+#speakers .social{
+    width: 255px;
+    border-radius: 5px;
+    background-color: #f62b0a;
+    position: absolute;
+    top: 0;
+    height: 183px;    
+    opacity: 0;
+    transition: 0.7s;
+    justify-content: center;
+    align-items: center;
+}
+
+#speakers .social:hover{
+    opacity: 0.7;
+}
+
+.social a{
+    font-size: 1.5em;
+    margin: 0 10px;
+    color: white;
+}
+
+#speakers ul li{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 60px 15px;
+}
+
+.speakerName{
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.speakerRole{
+    font-style: italic;
+    color: grey;
+    font-size: 0.9em;
+}
+
