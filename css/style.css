@@ -220,7 +220,7 @@ body{
     padding-top: 60px;
 }
 
-.title > h1, .titleInfo h1{
+.title > h1, .titleInfo h1, #sponsors h1{
     font-size: 2em;
     letter-spacing: 2px;
 }
@@ -379,7 +379,7 @@ body{
     color: grey;
 }
 
-.description p{
+.description p, #sponsors p{
     color: #868686;
     font-size: 0.9em;
     font-weight: 300;
@@ -390,6 +390,64 @@ body{
 .prova{
     display: flex;
     flex-direction: row;
+}
+
+#location{
+    background-image: url('../img/location-bg.jpg');
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#location h1{
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+#location h2{
+    margin-top: 30px;
+    margin-bottom: 3px;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+}
+
+#location > a{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color:#f72b0c;
+}
+
+#location .contacts{
+    border-top: 3px solid white;
+    width: 450px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+#location i{
+    margin-right: 10px;
+}
+
+#sponsors{
+    text-align: center;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.sponsorsList{
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#sponsors p{
+    margin-bottom: 50px;
 }
 
 

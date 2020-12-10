@@ -82,32 +82,11 @@ const copyrightLinks = [
     "Contact Us"
 ];
 
-const maps = [
-    "img/maps/vt (0).png",
-    "img/maps/vt (1).png",
-    "img/maps/vt (2).png",
-    "img/maps/vt (3).png",
-    "img/maps/vt (4).png",
-    "img/maps/vt (5).png",
-    "img/maps/vt (6).png",
-    "img/maps/vt (7).png",
-    "img/maps/vt (8).png",
-    "img/maps/vt (9).png",
-    "img/maps/vt (10).png",
-    "img/maps/vt (11).png",
-    "img/maps/vt (12).png",
-    "img/maps/vt (13).png",
-    "img/maps/vt (14).png",
-    "img/maps/vt (15).png",
-    "img/maps/vt (16).png",
-    "img/maps/vt (17).png",
-    "img/maps/vt (18).png",
-    "img/maps/vt (19).png",
-    "img/maps/vt (20).png",
-    "img/maps/vt (21).png",
-    "img/maps/vt (22).png",
-    "img/maps/vt (23).png",
-    "img/maps/vt (24).png",
-    "img/maps/vt (25).png",
-    "img/maps/vt (26).png",
-];
+const sponsors = [
+    "img/banner-1.jpg",
+    "img/banner-2.jpg",
+    "img/banner-3.jpg",
+    "img/banner-4.jpg",
+    "img/banner-5.jpg",
+    "img/banner-6.jpg",
+]

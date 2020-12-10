@@ -12,7 +12,7 @@ const app = new Vue({
         footerLinks: [...footerLinks],
         photos: [...photoGrid],
         copyrightLinks: [...copyrightLinks],
-        maps: [...maps]
+        sponsors: [...sponsors]
     },
     methods: {
         selectMenu(link) {
