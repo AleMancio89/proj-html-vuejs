@@ -11,7 +11,8 @@ const app = new Vue({
         socials: [...socials],
         footerLinks: [...footerLinks],
         photos: [...photoGrid],
-        copyrightLinks: [...copyrightLinks]
+        copyrightLinks: [...copyrightLinks],
+        maps: [...maps]
     },
     methods: {
         selectMenu(link) {

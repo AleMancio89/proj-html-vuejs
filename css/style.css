@@ -46,7 +46,6 @@ body{
 /* Header */
 
 .navbar{
-    /* height: 100px; */
     align-items: center;
     justify-content: space-between;
 }
@@ -80,7 +79,7 @@ body{
     border-bottom: 2px solid;
 }
 
-.menu span i{
+.menu a i{
     color: #868686;
     font-size: 0.8em;
 }
@@ -139,11 +138,13 @@ body{
 
 .text  p{
     color: #868686;
+    font-size: 0.9em;
+    font-weight: 300;
     margin-right: 20px;
     margin-bottom: 20px;
 }
 
-.text a{
+.text a, .titleInfo a{
     text-decoration: none;
     font-style: italic;
     color: #f72b0c;
@@ -216,10 +217,10 @@ body{
 
 #speakers .title{
     justify-content: space-between;
-    margin-top: 60px;
+    padding-top: 60px;
 }
 
-.title > h1{
+.title > h1, .titleInfo h1{
     font-size: 2em;
     letter-spacing: 2px;
 }
@@ -233,6 +234,10 @@ body{
     height: 36px;
     width: 36px;
     margin-right: 5px;
+}
+
+#speakers{
+    background-color: #F3F3F3;
 }
 
 #speakers img{
@@ -289,6 +294,113 @@ body{
     color: grey;
     font-size: 0.9em;
 }
+
+#program{
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+#program .titleInfo p:first-of-type{
+    color: #868686;
+    font-size: 0.9em;
+    font-weight: 300;
+    width: 400px;
+}
+
+.titleInfo {
+    justify-content: space-between;
+}
+
+.titleInfo p{
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.titleInfo a{
+    align-self: center;
+}
+
+.daysConference{
+    background-color: #f72b0c; 
+    margin-top: 40px;   
+}
+
+.daysConference .day{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 50px 10px 25px;
+    border-right: 1px solid #bf351f;
+    color: white;
+}
+
+.day:first-of-type{
+    background-color: #bf351f;
+}
+
+.day p{
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.details{
+    background-color: #f7f7f7 ;
+    padding: 60px 50px;
+}
+
+.details .tab{
+    width: 40%;
+    letter-spacing: 1px;
+}
+
+.tab i{
+    margin: 12px 20px 12px 0;
+    color: #868686;
+}
+
+.details .tab div{
+    color: #868686;
+    font-size: 0.8em;
+}
+
+.details .tab div:last-child{
+    color: #f72b0c;
+}
+
+.details img{    
+    height: 45px;
+    border-radius: 5px;
+}
+
+.description h1{
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: grey;
+}
+
+.description p{
+    color: #868686;
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.prova{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

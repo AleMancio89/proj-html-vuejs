@@ -22,7 +22,7 @@
                             <a @click="selectMenu(link)" href="#" :class="{active: link == selectedMenu}">{{ link }}</a>
                         </li>
                     </ul>
-                    <span><i class="fas fa-search"></i></span>
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </div>
             </div>
         </header>
@@ -94,27 +94,92 @@
                     <button id="subBtn" class="btn">SUBSCRIBE</button>
                 </div>
             </section>
-            <section id="speakers" class="wrapper">
-                <div class="title d-flex">
-                    <h1>SPEAKERS</h1>
-                    <div class="arrows d-flex">
-                        <button class="btn"><i class="fas fa-chevron-left"></i></button>
-                        <button class="btn"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                </div>
-                <ul class="speakersList">
-                    <li v-for="speaker in speakers">
-                        <img :src="speaker.img" alt="speaker">
-                        <div class="social d-flex">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <section id="speakers" >
+                <div class="wrapper">
+                    <div class="title d-flex">
+                        <h1>SPEAKERS</h1>
+                        <div class="arrows d-flex">
+                            <button class="btn"><i class="fas fa-chevron-left"></i></button>
+                            <button class="btn"><i class="fas fa-chevron-right"></i></button>
                         </div>
-                        <p class="speakerName">{{ speaker.name }}</p>
-                        <p class="speakerRole">{{ speaker.role }}</p>
+                    </div>
+                    <ul class="speakersList">
+                        <li v-for="speaker in speakers">
+                            <img :src="speaker.img" alt="speaker">
+                            <div class="social d-flex">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <p class="speakerName">{{ speaker.name }}</p>
+                            <p class="speakerRole">{{ speaker.role }}</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="program" class="wrapper">
+                <div class="titleInfo d-flex">
+                    <div class="d-flex">
+                        <h1>PROGRAM</h1>
+                        <p>This conference run through all 4 days from 23 - 26 May 2016. We also provide free lunch and coffee break in each day.</p>
+                    </div>
+                    <a href="#">View Full Program</a>
+                </div>
+                <div class="programDetails">
+                    <div class="daysConference d-flex">
+                        <div class="day">
+                            <h4>DAY 1</h4>
+                            <p>23 May 2016</p>
+                        </div>
+                        <div class="day">
+                            <h4>DAY 2</h4>
+                            <p>23 May 2016</p>
+                        </div>
+                        <div class="day">
+                            <h4>DAY 3</h4>
+                            <p>23 May 2016</p>
+                        </div>
+                        <div class="day">
+                            <h4>DAY 4</h4>
+                            <p>23 May 2016</p>
+                        </div>
+                        <div class="day">
+                            <h4>DAY 5</h4>
+                            <p>23 May 2016</p>
+                        </div>
+                    </div>
+                    <div class="details d-flex">
+                        <div class="tab">
+                            <div>
+                                <span><i class="far fa-clock"></i></span>
+                                09:00 - 10:30
+                            </div>
+                            <div>
+                                <span><i class="fas fa-location-arrow"></i></span>
+                                ROOM A
+                            </div>
+                            <div>
+                                <span><i class="fas fa-user-alt"></i></span>
+                                LAURENCE FRANCIS
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h1>WELCOMING AND INTRODUCTION</h1>
+                            <p>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur....</p>
+                            <img src="img/speaker-8.jpg" alt="photo">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="maps">
+                <ul class="prova">
+                    <li v-for="map in maps">
+                        <img :src="map" alt="">
                     </li>
                 </ul>
             </section>
+
 
         </main>
 
