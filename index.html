@@ -14,15 +14,17 @@
 <body>
     <div id="root" >
         <header>
-            <div class="navbar d-flex wrapper">
-                <img src="img/logo.png" alt="">
-                <div class="menu d-flex">
-                    <ul>
-                        <li v-for="link in header">
-                            <a @click="selectMenu(link)" href="#" :class="{active: link == selectedMenu}">{{ link }}</a>
-                        </li>
-                    </ul>
-                    <a href="#"><i class="fas fa-search"></i></a>
+            <div class="navFixer">
+                <div class="navbar d-flex wrapper">
+                    <img src="img/logo.png" alt="">
+                    <div class="menu d-flex">
+                        <ul>
+                            <li v-for="link in header">
+                                <a @click="selectMenu(link)" href="#" :class="{active: link == selectedMenu}">{{ link }}</a>
+                            </li>
+                        </ul>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
                 </div>
             </div>
         </header>

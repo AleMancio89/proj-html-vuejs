@@ -12,20 +12,23 @@ const app = new Vue({
         footerLinks: [...footerLinks],
         photos: [...photoGrid],
         copyrightLinks: [...copyrightLinks],
-        sponsors: [...sponsors]
+        sponsors: [...sponsors],
     },
     methods: {
+        //Salva la selezione del menu navbar
         selectMenu(link) {
             this.selectedMenu = link;
         },
+        //Scroll verso destra di 285px (lunghezza card singolo speaker)
         scrollRight() {
-            let window = document.getElementById("scrollable");
-            window.scrollLeft += 285;
+            let element = document.getElementById("scrollable");
+            element.scrollLeft += 285;
         },
+        //Scroll verso sinistra di 285px (lunghezza card singolo speaker)
         scrollLeft() {
-            let window = document.getElementById("scrollable");
-            window.scrollLeft -= 285;
-        },
+            let element = document.getElementById("scrollable");
+            element.scrollLeft -= 285;
+        }
 
     }
 

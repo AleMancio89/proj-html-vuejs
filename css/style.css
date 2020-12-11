@@ -10,7 +10,6 @@ body{
     line-height: 1.7;
 }
 
-
 /* UTILITY & GENERAL */
 
 .debug{
@@ -45,6 +44,13 @@ body{
 }
 
 /* HEADER */
+
+.navFixer{
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    background-color: #F3F3F3;
+}
 
 .navbar{
     align-items: center;
@@ -86,6 +92,10 @@ body{
 }
 
 /* MAIN */
+
+main{
+    padding-top: 100px;
+}
 
 /* Conference register section */
 
