@@ -18,6 +18,14 @@ const app = new Vue({
         selectMenu(link) {
             this.selectedMenu = link;
         },
+        scrollRight() {
+            let window = document.getElementById("scrollable");
+            window.scrollLeft += 285;
+        },
+        scrollLeft() {
+            let window = document.getElementById("scrollable");
+            window.scrollLeft -= 285;
+        },
 
     }
 

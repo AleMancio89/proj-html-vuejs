@@ -35,7 +35,7 @@
                     <div class="whenWhereWho d-flex">
                         <span>23 - 26 MAY 2019 </span>
                         <span>/</span>
-                        <span>SANS FRANCISCO </span>
+                        <span>SAN FRANCISCO </span>
                         <span>/</span>
                         <span>8 SPEAKERS</span>
                     </div>
@@ -99,11 +99,11 @@
                     <div class="title d-flex">
                         <h1>SPEAKERS</h1>
                         <div class="arrows d-flex">
-                            <button class="btn"><i class="fas fa-chevron-left"></i></button>
-                            <button class="btn"><i class="fas fa-chevron-right"></i></button>
+                            <button @click="scrollLeft" class="btn"><i class="fas fa-chevron-left"></i></button>
+                            <button @click="scrollRight" class="btn"><i class="fas fa-chevron-right"></i></button>
                         </div>
                     </div>
-                    <ul class="speakersList">
+                    <ul id="scrollable" class="speakersList">
                         <li v-for="speaker in speakers">
                             <img :src="speaker.img" alt="speaker">
                             <div class="social d-flex">
@@ -193,8 +193,147 @@
                     </div>
                 </div>
             </section>
+            <section id="recentNews" class="wrapper">
+                <div class="titleInfo d-flex">
+                    <h1>RECENT NEWS</h1>
+                    <a href="#">Read All News</a>
+                </div>
+                <div class="newsList d-flex">
+                    <div class="news">
+                        <div class="image">
+                            <img src="img/news-image-1.jpg" alt="news">
+                            <div class="hoverNews">
+                                <div class="sticky">
+                                    <span><i class="fas fa-bullhorn"></i></span>
+                                    STICKY POST
+                                </div>
+                            </div>                            
+                        </div>
+                        <p>03 Dec 2013<span>/</span>0 Comments</p>
+                        <h3>SEDIAL EIUSMOD TEMPOR</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere....</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="news">
+                        <div class="image">
+                            <img src="img/news-image-2.jpg" alt="news">
+                            <div class="hoverNews">
+                                <div class="sticky">
+                                    <span><i class="fas fa-bullhorn"></i></span>
+                                    STICKY POST
+                                </div>
+                            </div>                            
+                        </div>
+                        <p>03 Dec 2013<span>/</span>2 Comments</p>
+                        <h3>DONEC LUCTUS IMPERDIET</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere....</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="news">
+                        <div class="image">
+                            <img src="img/news-image-3.jpg" alt="news">
+                            <div class="hoverNews">
+                                <div class="sticky">
+                                    <span><i class="fas fa-bullhorn"></i></span>
+                                    STICKY POST
+                                </div>
+                            </div>                            
+                        </div>
+                        <p>03 Dec 2013<span>/</span>2 Comments</p>
+                        <h3>MAGNA PARS STUDIORUM</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere....</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </section>
+            <section id="tickets">
+                <div class="wrapper d-flex">
+                    <h1>TICKETS</h1>  
+                    <div class="ticketsList d-flex">
+                        <div class="ticket oneDay">
+                            <div class="titleSection">
+                                <h3>ONE DAY PASS</h3>
+                                <h4>FREE</h4>
+                            </div>
+                            <ul class="features">
+                                <li>One Day Access</li>
+                                <li>Coffee Break</li>
+                                <li>Lunch(International Buffet)</li>
+                                <li>Document Sheets</li>
+                                <li>50USD Voucher For Next Event</li>
+                            </ul>
+                            <button id="bookBtn" class="btn">BOOK NOW</button>
+                        </div>
+                        <div class="ticket fourDay">                            
+                            <div class="titleSection">
+                                <div class="banner">Featured!</div>
+                                <h3>FOUR DAY PASSES</h3>
+                                <h4>750.00 USD</h4>
+                            </div>
+                            <ul class="features">
+                                <li>Four Day Access</li>
+                                <li>Coffee Break</li>
+                                <li>Lunch(International Buffet)</li>
+                                <li>Document Sheets</li>
+                                <li>100USD Voucher For Next Event</li>
+                            </ul>
+                            <button id="bookBtn" class="btn">BOOK NOW</button>
+                        </div>
+                        <div class="ticket twoDays">
+                            <div class="titleSection">
+                                <h3>TWO DAY PASSES</h3>
+                                <h4>580.00 USD</h4>
+                            </div>
+                            <ul class="features">
+                                <li>Two Day Access</li>
+                                <li>Coffee Break</li>
+                                <li>Lunch(International Buffet)</li>
+                                <li>Document Sheets</li>
+                                <li>70USD Voucher For Next Event</li>
+                            </ul>
+                            <button id="bookBtn" class="btn">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>  
+            </section>
+            <section id="presentation" class="wrapper d-flex">
+                <div class="video">
+                    <h1>PRESENTATION</h1>
+                    <img src="img/video.jpg" alt="video">
+                </div>
+                <div class="twitter">
+                    <h1>TWITTER FEED</h1>
+                    <ul>
+                        <li class="tweet  d-flex">
+                            <div class="logo"><span><i class="fab fa-twitter"></i></span></div>                       
+                            <div class="tweetText">
+                                <p>Stand out and be vibrant with some of the best bright and bold templates on <a href="#">@Envato</a> Elements. And add a splash of c… <a href="#">https://t.co/jFrsnzEJK7</a></p>
+                                
+                                <p>3 days ago</p>
+                            </div> 
 
+                        </li>
+                        <li class="tweet  d-flex">
+                            <div class="logo"><span><i class="fab fa-twitter"></i></span></div>                       
+                            <div class="tweetText">
+                                <p>Do you need to deliver the perfect presentation or creative pitch? Sure, your ideas and plan need to be on-point, b…  <a href="#">https://t.co/nCmvsJVDpW</a></p>
+                                
+                                <p>9 days ago</p>
+                            </div> 
 
+                        </li>
+                        <li class="tweet  d-flex">
+                            <div class="logo"><span><i class="fab fa-twitter"></i></span></div>                       
+                            <div class="tweetText">
+                                <p>Cut yourself a piece of the BFCM sales pie with a solid marketing plan. Here are 5 ways to optimize your content fo… <a href="#">https://t.co/UZfKHshE0T</a></p>
+                                
+                                <p>3 days ago</p>
+                            </div> 
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
             <section id="sponsors" class="d-flex">
                 <div class="wrapper">
                     <h1>SPONSORS</h1>
@@ -206,8 +345,6 @@
                     </ul>
                 </div>
             </section>
-
-
         </main>
 
         <footer>

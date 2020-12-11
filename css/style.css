@@ -11,7 +11,7 @@ body{
 }
 
 
-/* Utility & general */
+/* UTILITY & GENERAL */
 
 .debug{
     border: 1px solid black;
@@ -29,6 +29,7 @@ body{
 .btn{
     outline: none;
     border: none;
+    cursor: pointer;
     background-color: #f72b0c;
     color: white;
     border-radius: 5px;
@@ -43,7 +44,7 @@ body{
     border-bottom: 4px solid #bf351f;
 }
 
-/* Header */
+/* HEADER */
 
 .navbar{
     align-items: center;
@@ -84,7 +85,9 @@ body{
     font-size: 0.8em;
 }
 
-/* Main */
+/* MAIN */
+
+/* Conference register section */
 
 #conferenceRegister{
     background-image: url('../img/slider-1-bg.jpg');
@@ -119,6 +122,8 @@ body{
     border-top: 3px solid white;
 }
 
+/* About Us section */
+
 #aboutUs > div{
     flex-basis: calc(100% / 3);
     padding: 50px 0px;
@@ -144,13 +149,15 @@ body{
     margin-bottom: 20px;
 }
 
-.text a, .titleInfo a{
+.text a, .titleInfo a, .news a{
     text-decoration: none;
     font-style: italic;
     color: #f72b0c;
     letter-spacing: 1px;
     font-size: 0.9em;
 }
+
+/* Counter Subscribe section */
 
 #counterSubscribe{
     background-image: url('../img/countdown-bg1.jpg');
@@ -209,18 +216,19 @@ body{
     color: #c6c1bd;
 }
 
-
 #counterSubscribe > h3{
     letter-spacing: 5px;
     margin: 30px 0;
 }
+
+/* Speakers section */
 
 #speakers .title{
     justify-content: space-between;
     padding-top: 60px;
 }
 
-.title > h1, .titleInfo h1, #sponsors h1{
+.title > h1, .titleInfo h1, #sponsors h1, #presentation h1{
     font-size: 2em;
     letter-spacing: 2px;
 }
@@ -238,6 +246,10 @@ body{
 
 #speakers{
     background-color: #F3F3F3;
+}
+
+#scrollable{
+    scroll-behavior: smooth;
 }
 
 #speakers img{
@@ -273,7 +285,6 @@ body{
     display: flex;
     flex-flow: row nowrap;
     overflow: hidden;
-    overflow-x: auto;
 }
 
 #speakers ul li{
@@ -294,6 +305,8 @@ body{
     color: grey;
     font-size: 0.9em;
 }
+
+/* Program section */
 
 #program{
     padding-top:60px;
@@ -379,7 +392,7 @@ body{
     color: grey;
 }
 
-.description p, #sponsors p{
+.description p, #sponsors p, .news p:last-of-type{
     color: #868686;
     font-size: 0.9em;
     font-weight: 300;
@@ -387,10 +400,7 @@ body{
     margin-bottom: 20px;
 }
 
-.prova{
-    display: flex;
-    flex-direction: row;
-}
+/* Location section */
 
 #location{
     background-image: url('../img/location-bg.jpg');
@@ -432,6 +442,205 @@ body{
     margin-right: 10px;
 }
 
+/* Recent News section */
+
+#recentNews{
+    padding-bottom: 50px;
+}
+
+#recentNews .titleInfo{
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+#recentNews .newsList .news{
+    flex-basis: calc(100% / 3);
+}
+
+#recentNews .newsList .news img{
+    width: 100%;
+}
+
+#recentNews .newsList .news:nth-child(2){
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.news .image{
+    position: relative;
+}
+
+.hoverNews{
+    width: 100%;
+    height: 207px;
+    position:absolute;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: 1s;
+}
+
+.hoverNews:hover{
+    opacity: 1;
+}
+
+.sticky{
+    background-color: black;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    text-align:center;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+
+.news h3{
+    letter-spacing: 2px;
+}
+
+.news p:first-of-type{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #868686;
+    font-style: italic;
+}
+
+.news p span{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Tickets section */
+
+#tickets{
+    background-image: url('../img/ticket-bg.jpg');
+}
+
+#tickets .wrapper{
+    align-items: center; 
+    flex-direction: column;   
+}
+
+#tickets h1{
+    color:white;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.ticketsList{
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.ticketsList .ticket > *{
+    text-align: center;
+    list-style: none;
+}
+
+.ticket .titleSection{
+    padding: 20px 0;
+    background-color: #F3F3F3;
+    position: relative;
+    overflow: hidden;
+}
+
+.ticket .titleSection h4{
+    color: #f72b0c
+}
+
+.features{
+    background-color: white;
+    color: grey;
+    font-style: italic;
+    font-size: 0.9em;
+    padding: 20px 0;
+}
+
+.features li{
+    padding-bottom: 15px;
+}
+
+
+.ticketsList > div{
+    flex-basis: calc(100% / 3);
+}
+
+.ticketsList > div:nth-child(2){
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#bookBtn{
+    width: 100%;
+    border-radius: 0;
+}
+
+.banner{
+    background-color: #f72b0c;
+    color:white;
+    position: absolute;
+    top: 25px;
+    right: -30px;
+    width: 140px;
+    transform: rotateZ(45deg);
+    font-size: 0.9em;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/* Presentation section */
+
+#presentation > div{
+    flex-basis: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#presentation div h1{
+    padding-bottom: 30px;
+}
+
+#presentation div img{
+    height: 75%;
+    margin-right: 30px;
+}
+
+.tweet{
+    margin-top: 20px;
+}
+
+.tweet .logo i{
+    margin-right: 30px;
+    color: #47bdee;
+    font-size: 1.5em;
+}
+
+.tweetText p:first-of-type{
+    color: #868686;
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.tweetText p:last-of-type{
+    color: grey;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.tweetText a{
+    text-decoration: none;
+    color: #f72b0c;
+}
+
+/* Sponsors section */
+
 #sponsors{
     text-align: center;
     flex-direction: column;
@@ -450,19 +659,7 @@ body{
     margin-bottom: 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Footer */
+/* FOOTER */
 
 footer{
     background-color: #272727;
@@ -517,6 +714,11 @@ footer{
     font-size: 0.7em;
     color:grey;
     letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.footerMenu li a:hover{
+    color:white;
 }
 
 .gallery ul{
@@ -557,4 +759,8 @@ footer{
 .copyright ul li a{
     text-decoration: none;
     color: grey;
+}
+
+#recentNews .titleInfo{
+    justify-content: space-between;
 }
